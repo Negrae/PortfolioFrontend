@@ -1,0 +1,10 @@
+{
+"negrae":[
+    {"nombre": "Franco"},
+    {"apellido": "Roldan"},
+    {"apodo": "Negrae"},
+    {"edad": 32},
+    {"estatura": 1.75},
+    {"peso": 80}
+]
+}
