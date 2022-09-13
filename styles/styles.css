@@ -1,0 +1,71 @@
+bodyx {
+    background-image: url("/images/coffee.gif");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+body {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(7, 46, 59), rgb(0, 0, 0));
+}
+
+/* id selectors para componentes  */
+
+#header {
+    padding-left: 1%;
+    padding-right: 1%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(7, 46, 59), rgb(0, 0, 0));
+    /*position: sticky;*/
+      
+}
+
+#aplogo {
+    width: 100px;
+}
+
+#socialmedia {
+    margin-right: 1%;
+}
+
+#banner {
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+#skills{
+    padding: 1%;
+}
+
+#loginbutton {
+    margin-right: 1%;
+}
+
+
+/* class selectors propios para usar en donde haga falta  */
+
+.redglow {
+    text-shadow: 2px 2px 5px red; 
+}
+
+.greyglow {
+    text-shadow: 2px 2px 5px rgb(69, 54, 54);
+}
+
+.skillsimgs {
+    margin: 5%;
+}
+
+.marginleft2 {
+margin-left: 2%;
+}
+
+.prgrsbar {
+    height: 25px !important; 
+    margin: 1%;
+}
+
+.subheaders {
+    font-weight: 600 !important;
+    padding-left: 5%;
+}
