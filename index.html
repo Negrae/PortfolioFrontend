@@ -10,18 +10,20 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
   </head>
 <!-- H E A D    E N D -->
+
 <!-- B O D Y    S T A R T -->
   <body>
-    <div id="header" class="fixed-top position-sticky">
-            <header class="d-flex flex-wrap py-3 mb-md-0 border-bottom">
+    <!-- H E A D E R     S T A R T -->
+    <div id="header" class="fixed-top position-sticky ">
+            <header class="d-flex flex-wrap py-3 mb-md-0 border-bottom border-warning">
               
               <div class="row d-flex align-items-center mb-1 mb-md-0 me-md-auto text-dark text-decoration-none">
-                <div class="col d-flex align-items-center">
+                <div class="col d-flex align-items-center opacity-75">
                   <img id="aplogo" src="images/APLogo-recorte.png" alt="Logo Argentina Programa"> 
                 </div>
-                <div class="col d-flex justify-content-between">
+                <div class="col d-flex justify-content-center">
                   <h2 class="text-danger redglow">Franco</h2>
-                  <h2 class="text-secondary greyglow marginleft2">{Roldan}</h2>
+                  <h2 class="text-warning blackshadow">{Roldan}</h2>
                 </div>
               </div>
 
@@ -36,21 +38,23 @@
                     <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
                   </svg></a></li>
               </ul>
-              <button id="loginbutton" type="button" class="btn btn-danger">Login</button>
+              <button id="loginbutton" type="button" class="btn btn-danger fw-semibold">Login</button>
             </header>
 
-            <div class="container">
+            <div class="container-flex border-bottom border-warning">
               <header class="d-flex justify-content-center py-0">
                 <ul class="nav nav-pills">
-                  <li class="nav-item"><a href="#" class="nav-link">About Me</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">My Projects</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link">Fancy Things</a></li>
-                  <li class="nav-item"><a href="#" class="nav-link ">More</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link fw-bold link-warning">Home</a></li>
+                  <li class="nav-item"><a href="#aboutme" class="nav-link fw-bold link-warning">About Me</a></li>
+                  <li class="nav-item"><a href="#projects" class="nav-link fw-bold link-warning">My Projects</a></li>
+                  <li class="nav-item"><a href="#skills" class="nav-link fw-bold link-warning">Skills</a></li>
                 </ul>
               </header>
             </div>
     </div>
-    
+    <!-- H E A D E R     E N D -->
+
+    <!-- B A N N E R     S T A R T -->
     <div id="banner" class="d-none d-sm-block">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
             <div class="carousel-indicators">
@@ -62,22 +66,22 @@
               <div class="carousel-item active">
                 <img src="images/banner1.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h3>Dedicacion</h3>
-                  <p>Some representative placeholder content for the first slide.</p>
+                  <h3 class="text-warning fw-bold bg-danger bg-opacity-50 blackshadow">Dedicacion</h3>
+                  <p class="text-warning fw-bold fs-5 blackshadow">Hacia la mejorar constante.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/banner2.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h3>Compromiso</h3>
-                  <p>Con la calidad, en cada detalle sin descuidar tiempos.</p>
+                  <h3 class="text-warning fw-bold bg-danger bg-opacity-50 blackshadow">Compromiso</h3>
+                  <p class="text-warning fw-bold fs-5 blackshadow">Con la calidad, el proceso y los resultados.</p>
                 </div>
               </div>
               <div class="carousel-item">
                 <img src="images/banner3.jpg" class="d-block w-100" alt="...">
                 <div class="carousel-caption d-none d-md-block">
-                  <h3>Creatividad</h3>
-                  <p>Some representative placeholder content for the third slide.</p>
+                  <h3 class="text-warning fw-bold bg-danger bg-opacity-50 blackshadow">Creatividad</h3>
+                  <p class="text-warning fw-bold fs-5 blackshadow">Para desarrollar soluciones.</p>
                 </div>
               </div>
             </div>
@@ -91,119 +95,90 @@
             </button>
           </div>
     </div>
+    <!-- B A N N E R     S T A R T -->
 
-    <div id="perfilphoto" class="position-relative">
-      <div class="position-absolute top-70 start-0 translate-middle-y">
-        <img src="images/daviscrop.jpg" class="rounded-circle border border-danger border-3" alt="Negrae Photo">
-      </div>
-      <div class="container">
-        <div class="col-md-7">
-          <h2 class="featurette-heading text-danger">Hacker desde los 5 años. <b class="text-muted">No te la vas a acabar chabal!</b></h2>
-          <p class="lead text-danger"><strong>Desde temprana edad marcando el ritmo! Instalo Doom2 en un nebulizador a los 5 años.</strong> * Lorem ipsum dolor sit amet ahhhh le clavaba el loren iksun de pechoo aca noma jajaja.</p>
-        </div>
-        <div class="col-md-5">
-          <img src="images/darknegrae.jpg" class="shadow-lg bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto border border-danger border-3 rounded" width="500" height="500"  margin: 1%;xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
+    <!-- A B O U T M E     S T A R T -->
+    <div id="aboutme">
+      <div class="position-relative">
+        <div class="position-absolute top-70 start-0 translate-middle-y"><img id="perfilphoto" src="images/daviscrop.jpg" class="rounded-circle border border-warning border-4 img-fluid shadow-lg" alt="Negrae Photo">
         </div>
       </div>
-
+      <div id="abouttext">
+        <h1 class="text-danger redglow ">{Negrae}</h1>
+        <p class="text-danger fw-bold fs-5 ">Full Stack Developer Jr.</p>
+        <p class="text-warning fw-bold fs-5">¡HOLA MUNDO! Mi nombre es Franco, pero me dicen "Negrae". Soy un aficionado de los videojuegos y la tecnología en general. Soy "Técnico" autodidacta de computadoras desde hace más de 10 años y estoy incursionando en el mundo de la programación y el diseño de interfaces desde hace aproximadamente 1. Entusiasta del aprendizaje de nuevas técnicas y de mejorar constantemente tanto personal como profesionalmente.</p>
+        <p><a class="btn btn-danger fw-bold" href="#">Contacta a Negrae! »</a></p>
+      </div>
     </div>
+    <!-- A B O U T M E     E N D -->
 
-    
-      <hr class="featurette-divider border-light ">
-  
-
-  
-  
-      <div class="row featurette">
-        <div class="col-md-7 order-md-2">
-          <h2 class="featurette-heading text-danger">Pirata informatico!? <b class="text-muted">(Pirata ojo de palo)</b></h2>
-          <p class="lead text-danger"><strong>Nunca en su puta vida pago por un programa original. Se bajo toda la discografia de sus bandas favoritas desde el Ares!</strong> * Cuando no habia internet, se hizo 30 viajes a la casa de un amigo para pasarse un juego en discos floopy.</p>
-        </div>
-        <div class="col-md-5 order-md-1">
-          <img src="images/negraepairat.jpg" class="shadow-lg bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto border border-danger border-3 rounded" width="500" height="500"  margin: 1%;xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">        </div>
-      </div>
-  
-      <hr class="featurette-divider">
-  
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading text-danger">Rompecorazones! <b class="text-muted">Segun voo!</b></h2>
-          <p class="lead text-danger"><strong><em>"Con pelo cualquiera chamuya fuerte"</em>...Una frase que Negrae jamas dijo pero que tranquilamente podria aplicar a otros sujetos...pero jamas a Negrae.</strong> * Ninguna de las 2 mujeres de la imagen fue untada por Negrae (que no la pone ni en la mano).</p>
-        </div>
-        <div class="col-md-5">
-          <img src="images/negraewins.jpg" class="shadow-lg bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto border border-danger border-3 rounded" width="500" height="500"  margin: 1%;xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
-  
-        </div>
-      </div>
-  
-      <hr class="featurette-divider border-light ">
-    </div>
-    
-
-    <div id="skills" class="container-flex padding2">
-      <h1 class="text-danger display-2 redglow subheaders">{ SKILLS }</h1>
-      <div class="row skillsimgs">
-        <div class="col-1 d-flex justify-content-center" ><img src="images/angular.png" alt="Angular" style="height: 40px; margin: 1%;"></div>
-        <div class="col-11 "><div class="progress bg-dark prgrsbar">
+    <!-- S K I L L S     S T A R T -->
+    <div id="skills" class="container-flex">
+      <h1 class="text-danger display-3 redglow subheaders">{ HARD & SOFT SKILLS }</h1>
+      <div class="row skillrows">
+        <div class="col-1 d-flex justify-content-start d-none d-sm-block" ><img class="skillsthumbs" src="images/angular.png" alt="Angular"></div>
+        <div class="col-11"><div class="progress bg-dark prgrsbar">
         <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar"  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><b>ANGULAR</b></div>
         </div>
         </div>
       </div>
-      <div class="row skillsimgs">
-        <div class="col-1 d-flex justify-content-center" ><img src="images/js.png" alt="Javascript" style="height: 40px; margin: 1%;"></div>
-        <div class="col-11 "><div class="progress bg-dark prgrsbar">
+      <div class="row skillrows">
+        <div class="col-1 d-flex justify-content-start d-none d-sm-block" ><img class="skillsthumbs" src="images/js.png" alt="Javascript"></div>
+        <div class="col-11"><div class="progress bg-dark prgrsbar">
         <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar"  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 80%"><b class="text-dark">JAVASCRIPT</b></div>
         </div>
         </div>
       </div>
-      <div class="row skillsimgs">
-        <div class="col-1 d-flex justify-content-center" ><img src="images/mysql.png" alt="MySQL" style="height: 40px; margin: 1%;"></div>
-        <div class="col-11 "><div class="progress bg-dark prgrsbar">
+      <div class="row skillrows">
+        <div class="col-1 d-flex justify-content-start d-none d-sm-block" ><img class="skillsthumbs" src="images/mysql.png" alt="MySQL"></div>
+        <div class="col-11"><div class="progress bg-dark prgrsbar">
         <div class="progress-bar progress-bar-striped progress-bar-animated bg-primary" role="progressbar"  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 40%"><b>MySQL</b></div>
         </div>
         </div>
       </div>
-      <div class="row skillsimgs">
-        <div class="col-1 d-flex justify-content-center" ><img src="images/springboot.png" alt="Springboot" style="height: 40px; margin: 1%;"></div>
-        <div class="col-11 "><div class="progress bg-dark prgrsbar">
+      <div class="row skillrows">
+        <div class="col-1 d-flex justify-content-start d-none d-sm-block" ><img class="skillsthumbs" src="images/springboot.png" alt="Springboot"></div>
+        <div class="col-11"><div class="progress bg-dark prgrsbar">
         <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar"  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 45%"><b>SPRINBOOT</b></div>
         </div>
         </div>
       </div>
-      <div class="row skillsimgs">
-        <div class="col-1 d-flex justify-content-center" ><img src="images/boostrap.png" alt="Boostrap" style="height: 40px; margin: 1%;"></div>
+      <div class="row skillrows">
+        <div class="col-1 d-flex justify-content-start d-none d-sm-block" ><img class="skillsthumbs" src="images/boostrap.png" alt="Boostrap"></div>
         <div class="col-11"><div class="progress bg-dark prgrsbar">
         <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar"  aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 85%; background-color: blueviolet;"><b>BOOTSTRAP</b></div>
         </div>
         </div>
       </div>
     </div>
+    <!-- S K I L L S     E N D -->
 
-
-    
-    <div class="container-flex padding2">
-        <h1 class="text-danger display-2 redglow subheaders">{ PROYECTOS }</h1>
+    <!-- P R O J E C T S     S T A R T -->
+    <div id="projects" class="container-flex">
+        <h1 class="text-danger display-3 redglow subheaders">{ PROYECTOS }</h1>
     </div>
+    <!-- P R O J E C T S     E N D -->
 
-    <div class="container">
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-        <p class="col-md-4 mb-0 text-muted">© 2022 Roldan Franco.</p>
+    <!-- F O O T E R     S T A R T -->
+    <div id="footer" class="container-flex">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-warning">
+        <p class="col-md-4 mb-0 text-warning">© 2022 Roldan Franco. All Rights Reserved.</p>
     
         <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
           <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
         </a>
     
         <ul class="nav col-md-4 justify-content-end">
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Features</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Pricing</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
-          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">.</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">.</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">.</a></li>
+          <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">.</a></li>
         </ul>
       </footer>
     </div>
+    <!-- F O O T E R     E N D -->
 
-<!-- - - Boostrap JS cdn - - -->
+    <!-- - - Boostrap JS cdn - - -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
   </body>
 <!-- B O D Y    E N D -->

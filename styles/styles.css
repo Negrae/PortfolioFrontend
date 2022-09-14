@@ -7,17 +7,15 @@ bodyx {
 }
 
 body {
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(7, 46, 59), rgb(0, 0, 0));
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(48, 5, 5), rgb(0, 0, 0));
 }
 
 /* id selectors para componentes  */
 
 #header {
-    padding-left: 1%;
-    padding-right: 1%;
-    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(7, 46, 59), rgb(0, 0, 0));
-    /*position: sticky;*/
-      
+    padding-left: 2%;
+    padding-right: 2%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(40, 0, 30), rgb(0, 0, 0));    
 }
 
 #aplogo {
@@ -28,17 +26,42 @@ body {
     margin-right: 1%;
 }
 
-#banner {
-    padding-left: 1%;
-    padding-right: 1%;
-}
-
-#skills{
-    padding: 1%;
-}
-
 #loginbutton {
     margin-right: 1%;
+}
+
+#banner {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#skills {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#projects {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#aboutme {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#abouttext {
+    padding-top: 115px;
+}
+
+#perfilphoto {
+    width: 220px;
+    min-width: 150px;
+}
+
+#footer {
+    padding-left: 2%;
+    padding-right: 2%;
 }
 
 
@@ -48,21 +71,32 @@ body {
     text-shadow: 2px 2px 5px red; 
 }
 
-.greyglow {
-    text-shadow: 2px 2px 5px rgb(69, 54, 54);
+.blackshadow {
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
 }
 
-.skillsimgs {
-    margin: 5%;
+.skillsimgss {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
-.marginleft2 {
-margin-left: 2%;
+.skillsthumbs {
+    height: 40px;
+}
+
+.skillrows {
+    padding-top: 1%;
+    padding-bottom: 2%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.prgrsrow {
+    padding-left: 5%;
 }
 
 .prgrsbar {
-    height: 25px !important; 
-    margin: 1%;
+    height: 25px !important;
 }
 
 .subheaders {
