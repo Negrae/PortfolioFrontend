@@ -22,6 +22,10 @@ body {
     width: 100px;
 }
 
+#headersurname {
+    margin-left: 2%;
+}
+
 #socialmedia {
     margin-right: 1%;
 }
@@ -33,6 +37,16 @@ body {
 #banner {
     padding-left: 2%;
     padding-right: 2%;
+}
+
+#education {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#experiences {
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 #skills {
@@ -84,12 +98,7 @@ body {
     height: 40px;
 }
 
-.skillrows {
-    padding-top: 1%;
-    padding-bottom: 2%;
-    padding-left: 5%;
-    padding-right: 5%;
-}
+
 
 .prgrsrow {
     padding-left: 5%;
