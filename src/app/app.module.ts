@@ -12,7 +12,6 @@ import { EducationComponent } from './components/education/education.component';
 import { SkillsComponent } from './components/skills/skills.component';
 import { ProjectsComponent } from './components/projects/projects.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { HomeComponent } from './components/home/home.component';
 import { LoginComponent } from './components/login/login.component';
 import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
@@ -20,6 +19,7 @@ import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
 import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { RegisterComponent } from './components/register/register.component';
+import { PortfolioeditComponent } from './components/portfolioedit/portfolioedit.component';
 
 @NgModule({
   declarations: [
@@ -32,10 +32,10 @@ import { RegisterComponent } from './components/register/register.component';
     SkillsComponent,
     ProjectsComponent,
     FooterComponent,
-    HomeComponent,
     LoginComponent,
     PortfolioComponent,
-    RegisterComponent
+    RegisterComponent,
+    PortfolioeditComponent
   ],
   imports: [
     BrowserModule,
