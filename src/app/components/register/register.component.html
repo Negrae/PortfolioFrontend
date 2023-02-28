@@ -1,0 +1,40 @@
+<section class="vh-100 gradient-custom">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+          <div class="card bg-dark text-white" style="border-radius: 1rem;">
+            <div class="card-body p-5 text-center">
+  <h1 class="m-5 text-danger redglow">Registro</h1>
+  <form [formGroup]="formReg" (ngSubmit)="onSubmit()" class="m-5">
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label text-warning loginsize">Email</label>
+        <input type="email" formControlName="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Email" [ngClass]="{'is-invalid': Email?.errors && Email?.touched, 'is-valid': !Email?.errors && Email?.touched}">
+      <div *ngIf="Email?.errors && Email?.touched">
+        <p *ngIf="Email?.hasError('required')" class="text-danger">
+            Se requiere un Email!
+        </p>
+        <p *ngIf="Email?.hasError('email')" class="text-danger">
+          Formato de Email incorrecto!
+      </p>
+      </div>
+    </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label text-warning loginsize">Contraseña</label>
+        <input type="password" formControlName="password" class="form-control" id="exampleInputPassword1" placeholder="Contraseña" [ngClass]="{'is-invalid': Password?.errors && Password?.touched, 'is-valid': !Password?.errors && Password?.touched}">
+        <div *ngIf="Password?.errors && Password?.touched">
+          <p *ngIf="Password?.hasError('required')" class="text-danger">
+              Se requiere una contraseña!
+          </p>
+          <p *ngIf="Password?.errors?.['minlength']" class="text-danger">
+            Contraseña debe ser mayor a 6 caracteres!
+        </p>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-danger">Enviar</button>
+  </form>
+  </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  </section>

@@ -1,0 +1,107 @@
+
+body {
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(48, 5, 5), rgb(0, 0, 0));
+}
+
+/* id selectors para componentes  */
+
+#header {
+    padding-left: 2%;
+    padding-right: 2%;
+    background-image: linear-gradient(to right, rgb(0, 0, 0), rgb(40, 0, 30), rgb(0, 0, 0));    
+}
+
+#aplogo {
+    width: 100px;
+}
+
+#headersurname {
+    margin-left: 2%;
+}
+
+#socialmedia {
+    margin-right: 1%;
+}
+
+#loginbutton {
+    margin-right: 1%;
+}
+
+#banner {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+#education {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#experiences {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#skills {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#projects {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#aboutme {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+#abouttext {
+    padding-top: 115px;
+}
+
+#perfilphoto {
+    width: 220px;
+    min-width: 150px;
+}
+
+#footer {
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+
+/* class selectors propios para usar en donde haga falta  */
+
+.redglow {
+    text-shadow: 2px 2px 5px red; 
+}
+
+.blackshadow {
+    text-shadow: 2px 2px 5px rgb(0, 0, 0);
+}
+
+.skillsimgss {
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.skillsthumbs {
+    height: 40px;
+}
+
+
+
+.prgrsrow {
+    padding-left: 5%;
+}
+
+.prgrsbar {
+    height: 25px !important;
+}
+
+.subheaders {
+    font-weight: 600 !important;
+    padding-left: 5%;
+}
