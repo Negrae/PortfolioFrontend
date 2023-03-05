@@ -47,7 +47,7 @@ formLogin:FormGroup;
     this.userService.login(this.formLogin.value)
     .then(response => {
       console.log(response);
-      this.router.navigate(['/portfolio'])
+      this.router.navigate(['/portfolioedit'])
     })
     .catch(error => {
       console.log(error);

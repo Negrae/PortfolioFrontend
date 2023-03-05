@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Subscriber } from 'rxjs';
-import { personamodel } from 'src/app/model/persona.model';
+import { personamodel } from 'src/app/interface/persona.model';
 import { DatabaseService } from 'src/app/services/database.service';
 
 @Component({

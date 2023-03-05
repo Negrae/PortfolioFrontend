@@ -7,7 +7,9 @@ import { Auth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signO
 
 export class UserService {
 
-    constructor(private auth: Auth) {}
+    constructor(
+        private auth: Auth,
+        ) {}
     
     register({ email, password }: any){
         return createUserWithEmailAndPassword(this.auth, email, password);
@@ -17,7 +19,8 @@ export class UserService {
         return signInWithEmailAndPassword(this.auth, email, password);
     }
     
-    salir() {
+    logout() {
         return signOut(this.auth);
     }
+    
 }

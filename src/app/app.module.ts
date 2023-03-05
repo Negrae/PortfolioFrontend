@@ -20,6 +20,7 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { RegisterComponent } from './components/register/register.component';
 import { PortfolioeditComponent } from './components/portfolioedit/portfolioedit.component';
+import { HeaderEditComponent } from './components/header-edit/header-edit.component';
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { PortfolioeditComponent } from './components/portfolioedit/portfolioedit
     LoginComponent,
     PortfolioComponent,
     RegisterComponent,
-    PortfolioeditComponent
+    PortfolioeditComponent,
+    HeaderEditComponent,
   ],
   imports: [
     BrowserModule,
