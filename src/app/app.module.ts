@@ -21,6 +21,22 @@ import { provideAuth,getAuth } from '@angular/fire/auth';
 import { RegisterComponent } from './components/register/register.component';
 import { PortfolioeditComponent } from './components/portfolioedit/portfolioedit.component';
 import { HeaderEditComponent } from './components/header-edit/header-edit.component';
+import { AboutmeEditComponent } from './components/aboutme-edit/aboutme-edit.component';
+import { EducationEditComponent } from './components/education-edit/education-edit.component';
+import { EducationFormComponent } from './components/education-form/education-form.component';
+import { EducationItemsComponent } from './components/education-items/education-items.component';
+import { EducationNewComponent } from './components/education-new/education-new.component';
+import { EducationSaveComponent } from './components/education-save/education-save.component';
+import { ExperiencesEditComponent } from './components/experiences-edit/experiences-edit.component';
+import { ExperiencesFormComponent } from './components/experiences-form/experiences-form.component';
+import { ExperiencesItemsComponent } from './components/experiences-items/experiences-items.component';
+import { ExperiencesNewComponent } from './components/experiences-new/experiences-new.component';
+import { ExperiencesSaveComponent } from './components/experiences-save/experiences-save.component';
+import { ProjectsEditComponent } from './components/projects-edit/projects-edit.component';
+import { ProjectsFormComponent } from './components/projects-form/projects-form.component';
+import { ProjectsItemsComponent } from './components/projects-items/projects-items.component';
+import { ProjectsNewComponent } from './components/projects-new/projects-new.component';
+import { ProjectsSaveComponent } from './components/projects-save/projects-save.component';
 
 @NgModule({
   declarations: [
@@ -38,6 +54,22 @@ import { HeaderEditComponent } from './components/header-edit/header-edit.compon
     RegisterComponent,
     PortfolioeditComponent,
     HeaderEditComponent,
+    AboutmeEditComponent,
+    EducationEditComponent,
+    EducationFormComponent,
+    EducationItemsComponent,
+    EducationNewComponent,
+    EducationSaveComponent,
+    ExperiencesEditComponent,
+    ExperiencesFormComponent,
+    ExperiencesItemsComponent,
+    ExperiencesNewComponent,
+    ExperiencesSaveComponent,
+    ProjectsEditComponent,
+    ProjectsFormComponent,
+    ProjectsItemsComponent,
+    ProjectsNewComponent,
+    ProjectsSaveComponent,
   ],
   imports: [
     BrowserModule,

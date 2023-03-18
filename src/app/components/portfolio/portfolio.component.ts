@@ -1,9 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { UserService } from 'src/app/services/user.service';
+import { educacioninterface } from 'src/app/interface/educacion.interface';
+import { experienciainterface } from 'src/app/interface/experiencia.interface';
 import { DatabaseService } from 'src/app/services/database.service';
-import { personamodel } from 'src/app/interface/persona.model';
-import { contactointerface } from 'src/app/interface/contacto.interface';
 
 @Component({
   selector: 'app-portfolio',
@@ -14,23 +13,22 @@ export class PortfolioComponent implements OnInit {
 
   persona:any=[];
   contacto:any=[];
-  // miEducacion: EstudiosI [] = [];
-  // miExperiencia: ExperienciaI [] = [];
+  educacion: educacioninterface [] = [];
+  experiencia: experienciainterface [] = [];
   // miHabilidad:HabilidadI [] = [];
   // misProyectos:ProyectosI [] = [];
   // miTecnologia:TecnologiasI[] = [];
 
   constructor(
     private router:Router,
-    private userService:UserService,
     private databaseService:DatabaseService
     )
     {}
 
   ngOnInit(): void {
-    // this.mostrarDatosPersona();
-    // this.mostrarDatosEstudios();
-    // this.mostrarDatosExperiencia();
+    this.mostrarDatosPersona();
+    this.mostrarDatosEducacion();
+    this.mostrarDatosExperiencia();
     // this.mostrarDatosHabilidad();
     // this.mostrarDatosProyectos();
     // this.mostrarDatosTecnologia();
@@ -44,30 +42,31 @@ export class PortfolioComponent implements OnInit {
   }
   
   mostrarDatosContacto() {
-    this.databaseService.obtenerDatosContacto().subscribe(data =>{
+    this.databaseService.obtenerContacto().subscribe(data =>{
       this.contacto=data;
     })
   }
 
-//   mostrarDatosPersona() {
-//     this.databaseService.obtenerDatosPersona().subscribe(data =>{
-//       this.persona=data;
-//     })
-//   }
+  mostrarDatosPersona() {
+    this.databaseService.obtenerPersona().subscribe(data =>{
+      this.persona=data;
+    })
+  }
 
-//   mostrarDatosEstudios() {
-//     this.databaseService.obtenerDatosEducacion().subscribe(data =>{
-//       this.miEducacion=data;
-//     })}
+  mostrarDatosEducacion() {
+    this.databaseService.obtenerDatosEducacion().subscribe(data =>{
+      this.educacion=data;
+    })
+  }
 
-//   mostrarDatosExperiencia() {
-//     this.databaseService.obtenerDatosExperiencia().subscribe(experiencia =>{
-//       this.miExperiencia=experiencia;
-//     })
-//   }
+  mostrarDatosExperiencia() {
+    this.databaseService.obtenerDatosExperiencia().subscribe(experiencia =>{
+      this.experiencia=experiencia;
+    })
+  }
 
 //   mostrarDatosHabilidad() {
-//     this.databaseService.obtenerDatosHabilidad().subscribe(data =>{
+//     this.databaseService.obtenerHabilidad().subscribe(data =>{
 //       this.miHabilidad=data;
 //     })
 // }
@@ -79,7 +78,7 @@ export class PortfolioComponent implements OnInit {
 // }
 
 // mostrarDatosTecnologia() {
-//   this.databaseService.obtenerDatosTecnologia().subscribe(data =>{
+//   this.databaseService.obtenerTecnologia().subscribe(data =>{
 //     this.miTecnologia=data;
 //   })
 

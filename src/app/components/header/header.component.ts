@@ -37,7 +37,7 @@ export class HeaderComponent implements OnInit {
   }
 
   mostrarDatosContacto() {
-    this.databaseService.obtenerDatosContacto().subscribe(data =>{
+    this.databaseService.obtenerContacto().subscribe(data =>{
       this.contacto=data;
     })
   }

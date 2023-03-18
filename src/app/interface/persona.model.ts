@@ -1,3 +1,4 @@
+//not used :D
 export class personamodel{
     id?: number;
     nombre: String;
