@@ -1,7 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Subscriber } from 'rxjs';
-import { persona } from 'src/app/model/persona.model';
-import { PersonaService } from 'src/app/services/persona.service';
+import { DatabaseService } from 'src/app/services/database.service';
 
 @Component({
   selector: 'app-aboutme',
@@ -9,11 +7,25 @@ import { PersonaService } from 'src/app/services/persona.service';
   styleUrls: ['./aboutme.component.css']
 })
 export class AboutmeComponent implements OnInit {
-  persona: persona = new persona("","","","","","");
-  constructor(public personaService: PersonaService) { }
+
+  // persona: personamodel = new personamodel("","","","","","");
+  persona:any=[];
+  
+
+  constructor(private databaseService:DatabaseService) { }
 
   ngOnInit(): void {
-    this.personaService.getPersona().subscribe(data => (this.persona = data))
+
+    //this.databaseService.getPersona().subscribe(data => (this.persona = data))
+
+    this.mostrarDatosPersona();
+
+
   }
 
+  mostrarDatosPersona() {
+    this.databaseService.obtenerPersona().subscribe(data =>{
+      this.persona=data;
+    })
+  }
 }
