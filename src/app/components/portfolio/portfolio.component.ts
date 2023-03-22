@@ -2,6 +2,9 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { educacioninterface } from 'src/app/interface/educacion.interface';
 import { experienciainterface } from 'src/app/interface/experiencia.interface';
+import { hardskillinterface } from 'src/app/interface/hardskill.interface';
+import { proyectointerface } from 'src/app/interface/proyecto.interface';
+import { softskillinterface } from 'src/app/interface/softskill.interface';
 import { DatabaseService } from 'src/app/services/database.service';
 
 @Component({
@@ -15,9 +18,9 @@ export class PortfolioComponent implements OnInit {
   contacto:any=[];
   educacion: educacioninterface [] = [];
   experiencia: experienciainterface [] = [];
-  // miHabilidad:HabilidadI [] = [];
-  // misProyectos:ProyectosI [] = [];
-  // miTecnologia:TecnologiasI[] = [];
+  proyecto:proyectointerface [] = [];
+  hardskill:hardskillinterface [] = [];
+  softskill:softskillinterface [] = []
 
   constructor(
     private router:Router,
@@ -27,18 +30,20 @@ export class PortfolioComponent implements OnInit {
 
   ngOnInit(): void {
     this.mostrarDatosPersona();
+    this.mostrarDatosContacto();
     this.mostrarDatosEducacion();
     this.mostrarDatosExperiencia();
-    // this.mostrarDatosHabilidad();
-    // this.mostrarDatosProyectos();
-    // this.mostrarDatosTecnologia();
-    this.mostrarDatosContacto();
-    
-
+    this.mostrarDatosProyecto();
+    this.mostrarDatosHardSkill();
+    this.mostrarDatosSoftSkill();
   }
 
   login(){
     this.router.navigate(['/login'])
+  }
+
+  register(){
+    this.router.navigate(['/register'])
   }
   
   mostrarDatosContacto() {
@@ -60,28 +65,27 @@ export class PortfolioComponent implements OnInit {
   }
 
   mostrarDatosExperiencia() {
-    this.databaseService.obtenerDatosExperiencia().subscribe(experiencia =>{
-      this.experiencia=experiencia;
+    this.databaseService.obtenerDatosExperiencia().subscribe(data =>{
+      this.experiencia=data;
     })
   }
 
-//   mostrarDatosHabilidad() {
-//     this.databaseService.obtenerHabilidad().subscribe(data =>{
-//       this.miHabilidad=data;
-//     })
-// }
+  mostrarDatosProyecto() {
+    this.databaseService.obtenerDatosProyecto().subscribe(data =>{
+      this.proyecto=data;
+    })
+  }
 
-//   mostrarDatosProyectos() {
-//   this.databaseService.obtenerDatosProyecto().subscribe(data =>{
-//     this.misProyectos=data;
-//   })
-// }
+  mostrarDatosHardSkill() {
+    this.databaseService.obtenerDatosHardSkill().subscribe(data =>{
+      this.hardskill=data;
+    })
+}
 
-// mostrarDatosTecnologia() {
-//   this.databaseService.obtenerTecnologia().subscribe(data =>{
-//     this.miTecnologia=data;
-//   })
-
-// }
+  mostrarDatosSoftSkill() {
+    this.databaseService.obtenerDatosSoftSkill().subscribe(data =>{
+      this.softskill=data;
+    })
+}
 
 }

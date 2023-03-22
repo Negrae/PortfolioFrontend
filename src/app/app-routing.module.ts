@@ -11,6 +11,10 @@ import { ExperiencesSaveComponent } from './components/experiences-save/experien
 import { ExperiencesEditComponent } from './components/experiences-edit/experiences-edit.component';
 import { ProjectsSaveComponent } from './components/projects-save/projects-save.component';
 import { ProjectsEditComponent } from './components/projects-edit/projects-edit.component';
+import { SkillsSaveComponent } from './components/skills-save/skills-save.component';
+import { SkillsEditComponent } from './components/skills-edit/skills-edit.component';
+import { HardskillsSaveComponent } from './components/hardskills-save/hardskills-save.component';
+import { HardskillsEditComponent } from './components/hardskills-edit/hardskills-edit.component';
 
 const routes: Routes = [
   {path:'', redirectTo: 'portfolio', pathMatch:'full'},
@@ -24,6 +28,10 @@ const routes: Routes = [
   {path:'portfolio/experienciaedit/:id', component: ExperiencesEditComponent,...canActivate(() => redirectUnauthorizedTo(['/login']))},
   {path:'portfolio/proyectosave', component: ProjectsSaveComponent,...canActivate(() => redirectUnauthorizedTo(['/login']))},
   {path:'portfolio/proyectoedit/:id', component: ProjectsEditComponent,...canActivate(() => redirectUnauthorizedTo(['/login']))},
+  {path:'portfolio/softskillsave', component: SkillsSaveComponent,...canActivate(() => redirectUnauthorizedTo(['/login']))},
+  {path:'portfolio/softskilledit/:id', component: SkillsEditComponent,...canActivate(() => redirectUnauthorizedTo(['/login']))},
+  {path:'portfolio/hardskillsave', component: HardskillsSaveComponent,...canActivate(() => redirectUnauthorizedTo(['/login']))},
+  {path:'portfolio/hardskilledit/:id', component: HardskillsEditComponent,...canActivate(() => redirectUnauthorizedTo(['/login']))},
 ];
 
 

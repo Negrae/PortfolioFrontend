@@ -1,0 +1,48 @@
+<div id="skills">
+
+    <div class="row align-items-center">
+
+        <div class="col-sm-10">
+            <h1 class="text-danger display-3 redglow subheaders">HARD SKILLS</h1>
+        </div>
+
+        <div class="col-sm-2">
+            <button class="btn btn-danger" (click)="backPorfolio()" id="botonedit">
+                <b class="text-warning">Volver</b>
+            </button>
+        </div>
+    </div>
+
+    <form class="form-control redbackground" [formGroup]="editarHaSkillForm" (ngSubmit)="editarHardSkill(editarHaSkillForm.value)"
+        id="form-edit">
+        <h3 class="text-warning">
+            Editando hardskill
+        </h3>
+
+        <div class="container">
+
+            <div class="form-floating mb-3">
+                <input type="text" class="form-control" formControlName="nombreHaSkill"
+                    placeholder="Nombre de proyecto">
+                <label for="floatingInput">
+                    Nombre de hardskill
+                </label>
+            </div>
+
+            <div class="form-floating mb-3">
+                <input class="form-control" type="text"
+                    name="titulo" id="titulo" id="floatingInput" formControlName="porcentajeHaSkill">
+                <label for="floatingInput">
+                    Porcentaje de habilidad
+                </label>
+            </div>
+
+            <br><br>
+            <div class="d-grid gap-2">
+                <button type="submit" class="btn btn-danger" id="botonedit"><b class="text-warning">Guardar cambios</b>
+                </button>
+            </div>
+        </div>
+    </form>
+
+</div>

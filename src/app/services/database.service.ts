@@ -6,6 +6,8 @@ import { personainterface } from '../interface/persona.interface';
 import { educacioninterface } from '../interface/educacion.interface';
 import { experienciainterface } from '../interface/experiencia.interface';
 import { proyectointerface } from '../interface/proyecto.interface';
+import { hardskillinterface } from '../interface/hardskill.interface';
+import { softskillinterface } from '../interface/softskill.interface';
 
 const httpOptions = {
   headers: new HttpHeaders ({
@@ -18,6 +20,14 @@ const httpOptions = {
 })
 export class DatabaseService {
 
+  // URLpersonas= 'http://localhost:8080/personas/';
+  // URLcontacto= 'http://localhost:8080/contacto/';
+  // URLeducacion= 'http://localhost:8080/educacion/';
+  // URLexperiencias= 'http://localhost:8080/experiencias/';
+  // URLproyectos= 'http://localhost:8080/proyectos/';
+  // URLhardskills= 'http://localhost:8080/hardskills/';
+  // URLsoftskills= 'http://localhost:8080/softskills/';
+
   URLpersonas= 'http://localhost:8080/personas/';
   URLcontacto= 'http://localhost:8080/contacto/';
   URLeducacion= 'http://localhost:8080/educacion/';
@@ -25,6 +35,7 @@ export class DatabaseService {
   URLproyectos= 'http://localhost:8080/proyectos/';
   URLhardskills= 'http://localhost:8080/hardskills/';
   URLsoftskills= 'http://localhost:8080/softskills/';
+
 
 
 
@@ -55,6 +66,7 @@ export class DatabaseService {
 
   // Servicios para CONTACTO
 
+
   obtenerDatosContacto(): Observable<any[]> {
     return this.http.get<any[]>(this.URLcontacto)
   }
@@ -68,7 +80,9 @@ export class DatabaseService {
     return this.http.put<contactointerface>(url, contacto);
   }
 
+
   // Servicios para EDUCACION
+
 
   obtenerDatosEducacion(): Observable<educacioninterface[]> {
     return this.http.get<educacioninterface[]>(this.URLeducacion+"vereducaciones")
@@ -93,7 +107,9 @@ export class DatabaseService {
     return this.http.put<educacioninterface>(url, datosEstudios);
   }
 
+
   // Servicios para EXPERIENCIA
+
 
   obtenerDatosExperiencia(): Observable<experienciainterface[]> {
     return this.http.get<experienciainterface[]>(this.URLexperiencias+"verexperiencias")
@@ -119,6 +135,7 @@ export class DatabaseService {
 
     // Servicios para PROYECTO
 
+
     obtenerDatosProyecto(): Observable<proyectointerface[]> {
       return this.http.get<proyectointerface[]>(this.URLproyectos+"verproyectos")
     }
@@ -141,9 +158,50 @@ export class DatabaseService {
       return this.http.get<proyectointerface>(url);
     }
 
+    
+    // Servicios para HARDSKILL
 
 
+    obtenerDatosHardSkill(): Observable<hardskillinterface[]> {
+      return this.http.get<hardskillinterface[]>(this.URLhardskills+"verhardskills")
+    }
+    borrarHardSkill(hardskill:hardskillinterface): Observable<hardskillinterface[]> {
+      return this.http.delete<hardskillinterface[]>(this.URLhardskills+"borrar/"+`${hardskill.id}`);
+    }
+    
+    agregarHardSkillDB(hardskill:hardskillinterface): Observable<hardskillinterface> {
+      return this.http.post<hardskillinterface>(this.URLhardskills+"nuevahardskill", hardskill, httpOptions);
+    }
+    
+    editarHardSkill(datosHardSkill:any): Observable<hardskillinterface> {
+      return this.http.put<hardskillinterface>(this.URLhardskills+"editar/"+`${datosHardSkill.id}`, datosHardSkill);
+    }
+    
+    obtenerHardSkill(id:any): Observable<hardskillinterface> {
+      return this.http.get<hardskillinterface>(this.URLhardskills+`${id}`);
+    }
 
+
+    // Servicios para SOFTSKILL
+
+    obtenerDatosSoftSkill(): Observable<softskillinterface[]> {
+    return this.http.get<softskillinterface[]>(this.URLsoftskills+"versoftskills")
+    }
+    borrarSoftSkill(softskill:softskillinterface): Observable<softskillinterface[]> {
+    return this.http.delete<softskillinterface[]>(this.URLsoftskills+"borrar/"+`${softskill.id}`);
+    }
+
+    agregarSoftSkillDB(softskill:softskillinterface): Observable<softskillinterface> {
+    return this.http.post<softskillinterface>(this.URLsoftskills+"nuevasoftskill", softskill, httpOptions);
+    }
+
+    editarSoftSkill(datosSoftSkill:any): Observable<softskillinterface> {
+    return this.http.put<softskillinterface>(this.URLsoftskills+"editar/"+`${datosSoftSkill.id}`, datosSoftSkill);
+    }
+
+    obtenerSoftSkill(id:any): Observable<softskillinterface> {
+    return this.http.get<softskillinterface>(this.URLsoftskills+`${id}`);
+    }
 
 
 }

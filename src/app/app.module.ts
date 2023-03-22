@@ -37,6 +37,16 @@ import { ProjectsFormComponent } from './components/projects-form/projects-form.
 import { ProjectsItemsComponent } from './components/projects-items/projects-items.component';
 import { ProjectsNewComponent } from './components/projects-new/projects-new.component';
 import { ProjectsSaveComponent } from './components/projects-save/projects-save.component';
+import { SkillsEditComponent } from './components/skills-edit/skills-edit.component';
+import { SkillsFormComponent } from './components/skills-form/skills-form.component';
+import { SkillsItemsComponent } from './components/skills-items/skills-items.component';
+import { SkillsNewComponent } from './components/skills-new/skills-new.component';
+import { SkillsSaveComponent } from './components/skills-save/skills-save.component';
+import { HardskillsEditComponent } from './components/hardskills-edit/hardskills-edit.component';
+import { HardskillsFormComponent } from './components/hardskills-form/hardskills-form.component';
+import { HardskillsItemsComponent } from './components/hardskills-items/hardskills-items.component';
+import { HardskillsNewComponent } from './components/hardskills-new/hardskills-new.component';
+import { HardskillsSaveComponent } from './components/hardskills-save/hardskills-save.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +80,16 @@ import { ProjectsSaveComponent } from './components/projects-save/projects-save.
     ProjectsItemsComponent,
     ProjectsNewComponent,
     ProjectsSaveComponent,
+    SkillsEditComponent,
+    SkillsFormComponent,
+    SkillsItemsComponent,
+    SkillsNewComponent,
+    SkillsSaveComponent,
+    HardskillsEditComponent,
+    HardskillsFormComponent,
+    HardskillsItemsComponent,
+    HardskillsNewComponent,
+    HardskillsSaveComponent,
   ],
   imports: [
     BrowserModule,

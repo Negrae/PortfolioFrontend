@@ -1,3 +1,14 @@
+# Portfolio Franco Noel Roldan Sarmiento para Argentina Programa 3.0
+
+Este es mi primer portfolio web dinamico y reactivo, desarrollado en el marco del plan [Argentina Programa 3.0](https://www.argentina.gob.ar/economia/conocimiento/argentina-programa), creado en Angular usando tambien el framework de Boostrap 5, con su API confeccionada en Springboot (Java) y su base de datos de tipo SQL, almacenadas todas las partes de forma distribuida.
+
+# Observaciones
+
+Estoy al tanto que codigo usado a lo largo del proyecto puede mejorar infinitamente :D. Hay gran cantidad de elementos de bootstrap repetidos o mal usados que estan pendiente de ser mejorados, asi tambien el uso de Angular y todas sus fucniones no ha sido aprovechadas del todo. Se recurrio a validacion por medio de Firebase y otras varias funcionalidades se han llevado a cabo como se ha podido debido a la necesidad de terminar el proyecto para su entrega en tiempo.
+Sin mas que agregar, un cordial saludo de parte de Negrae!
+
+______________________________________________________________________________________________________________________________
+
 # Porfoliae
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.2.
