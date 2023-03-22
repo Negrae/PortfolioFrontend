@@ -11,6 +11,14 @@
       </div>
     </div>
   </h2>
-  <app-projects-items *ngFor="let proyecto of miProyecto" [proyecto]="proyecto"
-    (borrarProyectoPass)="eliminarProyecto(proyecto)"></app-projects-items>
+  <div id="projects">
+    <div class="album py-5 redbackground ">
+      <div class="container">
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+          <app-projects-items *ngFor="let proyecto of miProyecto" [proyecto]="proyecto"
+            (borrarProyectoPass)="eliminarProyecto(proyecto)"></app-projects-items>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>

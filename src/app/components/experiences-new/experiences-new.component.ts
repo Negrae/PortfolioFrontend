@@ -8,6 +8,7 @@ import { experienciainterface } from 'src/app/interface/experiencia.interface';
   styleUrls: ['./experiences-new.component.css']
 })
 export class ExperiencesNewComponent implements OnInit {
+  
   @Output() agregarExperiencia:EventEmitter<experienciainterface> = new EventEmitter();
   
   nombreExp:string = "";
